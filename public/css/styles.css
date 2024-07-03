@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "PacFont";
+  src: url("/src/assets/PAC-FONT.TTF") format("truetype");
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url("../../src/assets/fondo-pacman.jpg");
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#game-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#logo,
+#banner {
+  width: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.score-board {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+
+.game-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  margin-bottom: 900px;
+}
+
+.game-container {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #fff;
+  overflow: hidden;
+}
+
+.pacman-character,
+.ghost-character,
+.cherry-item {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.game-over {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "PacFont", sans-serif;
+  color: #febd11;
+  font-size: 4rem;
+  display: none;
+}
+
+.score-display {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  color: white;
+}

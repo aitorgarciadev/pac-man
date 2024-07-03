@@ -4,29 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="stylesheet" href="./public/css/styles.css" />
     <title>Pacman</title>
 </head>
 
 <body>
-    <div class="points"></div>
-    <header id="banner">
-        <img id="logo" src="./src/assets/pac-man-logo.png" alt="iconpacman">
-        <img id="logoText" src="./src/assets/pac-man-logo-png-transparent.png" alt="banner">
+    <header id="game-header">
+        <img id="logo" src="./src/assets/pac-man-logo.png" alt="Pacman Logo">
+        <img id="banner" src="./src/assets/pac-man-logo-png-transparent.png" alt="Pacman Banner">
     </header>
-    <main>
-        <div class="pacmanCont">
-            <img src="./src/assets/pacmanBODY.png" class="pacman">
-            <img src="./src/assets/fantasmito.png" class="fantasmito">
-            <div class="gameOver">Game Over</div>
+    <main class="game-area">
+        <div class="game-container">
+            <div class="score-board">Score: <span class="score-display">0000</span></div>
+            <img src="./src/assets/pacmanBODY.png" class="pacman-character">
+            <img src="./src/assets/fantasmito.png" class="ghost-character">
+            <div class="game-over">Game Over</div>
         </div>
     </main>
+    <footer>
+        <audio autoplay loop>
+            <source src="./src/assets/Pacman-Game-Start-Sound.mp3" type="audio/mpeg">
+        </audio>
+    </footer>
+    <script type="module" src="./public/js/app.js"></script>
 </body>
-<footer>
-    <audio autoplay loop>
-        <source src="./src/assets/Pacman-Game-Start-Sound.mp3" type="audio/mpeg">
-    </audio>
-</footer>
-<script type="module" src="./public/js/app.js"></script>
 
 </html>
